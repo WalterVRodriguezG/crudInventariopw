@@ -1,49 +1,45 @@
 <div class="row">
   <div class="col-sm">
-    <h4>Product</h4>
+    <h4>Detalles de  </h4> {{(product$ | async).name}}
   </div>
 </div>
 <div class="jumbotron col-sm-8" style="margin:auto">
   <div class="form-group row">
-    <label for="" class="col-sm-2 col-form-label">Name</label>
+    <label for="" class="col-sm-2 col-form-label">Nombre</label>
     <div class="col-sm-10">
       <label for="" class="col-sm-12 col-form-label">{{(product$ | async).name}}</label>
     </div>
   </div>
   <div class="form-group row">
-    <label for="" class="col-sm-2 col-form-label">Code</label>
+    <label for="" class="col-sm-2 col-form-label">Codigo</label>
     <div class="col-sm-10">
       <label for="" class="col-sm-12 col-form-label">{{(product$ | async).code}}</label>
     </div>
 
   </div>
   <div class="form-group row">
-    <label for="" class="col-sm-2 col-form-label">Category</label>
+    <label for="" class="col-sm-2 col-form-label">Categoria</label>
     <div class="col-sm-10">
       <label for="" class="col-sm-12 col-form-label">{{(product$ | async).category.name}}</label>
       </div>
     </div>
     <div class="form-group row">
-      <label for="" class="col-sm-2 col-form-label">Unit</label>
+      <label for="" class="col-sm-2 col-form-label">Unidad de Medida</label>
       <div class="col-sm-10">
         <label for="" class="col-sm-12 col-form-label">{{(product$ | async).unit.name}}</label>
       </div>
     </div>
     <div class="form-group row">
-      <label for="" class="col-sm-2 col-form-label">Purchase Rate</label>
+      <label for="" class="col-sm-2 col-form-label">Precio</label>
       <div class="col-sm-4">
         <label for="" class="col-sm-12 col-form-label">{{(product$ | async).purchaseRate}}</label>
-      </div>
-      <label for="" class="col-sm-2 col-form-label">Sales Rate</label>
-      <div class="col-sm-4">
-        <label for="" class="col-sm-12 col-form-label">{{(product$ | async).salesRate}}</label>
       </div>
     </div>
     <div class="form-group row">
       <label for="" class="col-sm-2 col-form-label">&nbsp;</label>
       <div class="col-sm-10">
-          <button type="button" class="btn btn-success fa fa-pencil-square-o"  (click)='editProduct(product)' >&nbsp;Edit</button>&nbsp;
-          <button type="button" class="btn btn-light fa fa-ban" routerLink='/products' >&nbsp;Cancel</button>
+          <button type="button" class="btn btn-success fa fa-pencil-square-o"  (click)='editProduct(product)' >&nbsp;Editar</button>&nbsp;
+          <button type="button" class="btn btn-light fa fa-ban" routerLink='/products' >&nbsp;Regresar</button>
       </div>
     </div>
   </div>

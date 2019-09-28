@@ -9,17 +9,17 @@ import { max } from 'rxjs/operators';
 export class ProductService {
 
   private products:Array<Product> =  [
-    {  id:1, name: 'Eastern Mango pickle 500g', code: 'mp500', category: { name: 'mango', code: '1', category: 1 }, unit: { name: 'PCS', code: '1', category: 0 }, purchaseRate: 100, salesRate: 110 },
-    {  id:2, name: 'swad Mango pickle 500g', code: 'mp500', category: { name: 'mango', code: '1', category: 1 }, unit: { name: 'PCS', code: '1', category: 0 }, purchaseRate: 100, salesRate: 110 },
-    {  id:3, name: 'Taste Buds Mango pickle 500g', code: 'mp500', category: { name: 'mango', code: '1', category: 1 }, unit: { name: 'PCS', code: '1', category: 0 }, purchaseRate: 100, salesRate: 110 },
-    {  id:4, name: 'Eastern Garlic pickle 500g', code: 'mp500', category: { name: 'mango', code: '1', category: 1 }, unit: { name: 'PCS', code: '1', category: 0 }, purchaseRate: 100, salesRate: 110 },
-    {  id:5, name: 'Eastern Lemon pickle 500g', code: 'mp500', category: { name: 'mango', code: '1', category: 1 }, unit: { name: 'PCS', code: '1', category: 0 }, purchaseRate: 100, salesRate: 110 },
-    {  id:6, name: 'Eastern Tuna pickle 500g', code: 'mp500', category: { name: 'mango', code: '1', category: 1 }, unit: { name: 'PCS', code: '1', category: 0 }, purchaseRate: 100, salesRate: 110 },
-    {  id:7, name: 'Eastern Serdine pickle 500g', code: 'mp500', category: { name: 'mango', code: '1', category: 1 }, unit: { name: 'PCS', code: '1', category: 0 }, purchaseRate: 100, salesRate: 110 },
-    {  id:8, name: 'Eastern squids pickle 500g', code: 'mp500', category: { name: 'mango', code: '1', category: 1 }, unit: { name: 'PCS', code: '1', category: 0 }, purchaseRate: 100, salesRate: 110 },
-    {  id:9, name: 'Eastern tomoto pickle 500g', code: 'mp500', category: { name: 'mango', code: '1', category: 1 }, unit: { name: 'PCS', code: '1', category: 0 }, purchaseRate: 100, salesRate: 110 },
-    {  id:10, name: 'Melam Mango pickle 500g', code: 'mp500', category: { name: 'mango', code: '1', category: 1 }, unit: { name: 'PCS', code: '1', category: 0 }, purchaseRate: 100, salesRate: 110 },
-    {  id:11, name: 'Kroger Mango pickle 500g', code: 'mp500', category: { name: 'mango', code: '1', category: 1 }, unit: { name: 'PCS', code: '1', category: 0 }, purchaseRate: 100, salesRate: 110 }
+    {  id:1, name: 'Rasuradora', code: '0001', category: { name: 'Higiene Personal', code: '1', category: 1 }, unit: { name: 'Unidad', code: '1', category: 0 }, purchaseRate: 100, salesRate: 110 },
+    {  id:2, name: 'Escoba Automática', code: '0002', category: { name: 'Limpieza', code: '2', category: 1 }, unit: { name: 'Unidad', code: '1', category: 0 }, purchaseRate: 100, salesRate: 110 },
+    {  id:3, name: 'Toallas Extra grandes', code: '0003', category: { name: 'Higiene Personal', code: '1', category: 1 }, unit: { name: 'Unidad', code: '1', category: 0 }, purchaseRate: 100, salesRate: 110 },
+    {  id:4, name: 'Café', code: '0050', category: { name: 'Comida', code: '3', category: 1 }, unit: { name: 'Gramos', code: '1', category: 0 }, purchaseRate: 100, salesRate: 110 },
+    {  id:5, name: 'Azucar', code: '1000', category: { name: 'Comida', code: '3', category: 1 }, unit: { name: 'Libras', code: '6', category: 0 }, purchaseRate: 100, salesRate: 110 },
+    {  id:6, name: 'Desodorante', code: '0200', category: { name: 'Higiene Personal', code: '1', category: 1 }, unit: { name: 'Unidad', code: '1', category: 0 }, purchaseRate: 100, salesRate: 110 },
+    {  id:7, name: 'Monitor', code: '2000', category: { name: 'Tecnología', code: '5', category: 1 }, unit: { name: 'Unidad', code: '5', category: 0 }, purchaseRate: 100, salesRate: 110 },
+    {  id:8, name: 'Radio Stereo', code: '2001', category: { name: 'Tecnología', code: '5', category: 1 }, unit: { name: 'Unidad', code: '1', category: 0 }, purchaseRate: 100, salesRate: 110 },
+    {  id:9, name: 'Cereal', code: '0501', category: { name: 'Comida', code: '3', category: 1 }, unit: { name: 'Libras', code: '6', category: 0 }, purchaseRate: 100, salesRate: 110 },
+    {  id:10, name: 'Nutella', code: '0404', category: { name: 'Comida', code: '3', category: 1 }, unit: { name: 'Libras', code: '6', category: 0 }, purchaseRate: 100, salesRate: 110 },
+    {  id:11, name: 'Granos varios', code: '0036', category: { name: 'Comida', code: '3', category: 1 }, unit: { name: 'Libras', code: '6', category: 0 }, purchaseRate: 100, salesRate: 110 }
 ];
 
   constructor() { }

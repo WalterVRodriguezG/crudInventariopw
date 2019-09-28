@@ -8,18 +8,21 @@ import { Observable, of } from 'rxjs';
 export class LookupService {
 
   private units: Array<Lookup> =[
-    {name:'PCS', code:"1", category:1},
-    {name:'Carton', code:"2", category:1},
-    {name:'Gram', code:"3", category:1},
-    {name:'Ltr', code:"4", category:1}
+    {name:'Unidad', code:"1", category:1},
+    {name:'Caja', code:"2", category:1},
+    {name:'Gramos', code:"3", category:1},
+    {name:'Litros', code:"4", category:1},
+    {name:'miliLitros', code:"5", category:1},
+    {name:'Libras', code:"6", category:1}
   ];
 
 
   private productCategories:Array<Lookup> = [
-    {name:'Pickles', code:"1", category:1},
-    {name:'Rice', code:"2", category:1},
-    {name:'Oil', code:"3", category:1},
-    {name:'Masala', code:"4", category:1}
+    {name:'Limpieza', code:"1", category:1},
+    {name:'Higiene Personal', code:"2", category:1},
+    {name:'Comida Rapida', code:"3", category:1},
+    {name:'Bebidas', code:"4", category:1},
+    {name:'Tecnología', code:"5", category:1}
   ];
 
 
